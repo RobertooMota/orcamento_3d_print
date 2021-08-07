@@ -18,9 +18,9 @@ class MainWindow(QMainWindow):
 		self.setWindowTitle(f"M3D Orçamento - v{version}")
 
 		# Botões menu lateral
-		self.interface.btn_Orcamento.clicked.connect(lambda: self.interface.pgs_Operacao.setCurrentWidget(self.interface.pg_Orcamento))
-		self.interface.btn_ValorCliente.clicked.connect(lambda: self.interface.pgs_Operacao.setCurrentWidget(self.interface.pg_ValorCliente))
-		self.interface.btn_ValorCompleto.clicked.connect(lambda: self.interface.pgs_Operacao.setCurrentWidget(self.interface.pg_ValorCompleto))
+		self.interface.btn_Orcamento.clicked.connect(lambda: UIFuncoes.Orcamento(self))
+		self.interface.btn_ValorCliente.clicked.connect(lambda: UIFuncoes.ValorCliente(self))
+		self.interface.btn_ValorCompleto.clicked.connect(lambda: UIFuncoes.ValorCompleto(self))
 
 		# Sair
 		self.interface.btn_Sair.clicked.connect(lambda: UIFuncoes.sair(self))

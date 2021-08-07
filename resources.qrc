@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="fundo">
+    <file>imgs/logoMoeda.png</file>
     <file>imgs/3d2.png</file>
     <file>imgs/3d.png</file>
   </qresource>

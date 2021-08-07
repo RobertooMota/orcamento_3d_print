@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainiqmCnC.ui'
+## Form generated from reading UI file 'mainmXnaJA.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.2
 ##
@@ -18,14 +18,20 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1128, 904)
+        MainWindow.resize(1000, 730)
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
         MainWindow.setSizePolicy(sizePolicy)
         MainWindow.setMinimumSize(QSize(1000, 730))
+        icon = QIcon()
+        icon.addFile(u":/fundo/imgs/logoMoeda.png", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setTabShape(QTabWidget.Rounded)
+        MainWindow.setDockNestingEnabled(True)
+        MainWindow.setDockOptions(QMainWindow.AllowNestedDocks|QMainWindow.AllowTabbedDocks|QMainWindow.AnimatedDocks|QMainWindow.VerticalTabs)
+        MainWindow.setUnifiedTitleAndToolBarOnMac(False)
         self.opc_Filamento = QAction(MainWindow)
         self.opc_Filamento.setObjectName(u"opc_Filamento")
         self.opc_Caixa = QAction(MainWindow)
@@ -61,10 +67,12 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.frm_sideButtons = QFrame(self.frm_MainFrame)
         self.frm_sideButtons.setObjectName(u"frm_sideButtons")
+        self.frm_sideButtons.setMinimumSize(QSize(200, 708))
         self.frm_sideButtons.setMaximumSize(QSize(200, 16777215))
-        self.frm_sideButtons.setStyleSheet(u"background-color: #252323;")
+        self.frm_sideButtons.setStyleSheet(u"background-color: #282a36;")
         self.frm_sideButtons.setFrameShape(QFrame.NoFrame)
         self.frm_sideButtons.setFrameShadow(QFrame.Raised)
+        self.frm_sideButtons.setLineWidth(0)
         self.verticalLayout = QVBoxLayout(self.frm_sideButtons)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -73,30 +81,35 @@ class Ui_MainWindow(object):
         self.frm_ButtonsMain.setObjectName(u"frm_ButtonsMain")
         self.frm_ButtonsMain.setFrameShape(QFrame.NoFrame)
         self.frm_ButtonsMain.setFrameShadow(QFrame.Raised)
+        self.frm_ButtonsMain.setLineWidth(0)
         self.verticalLayout_2 = QVBoxLayout(self.frm_ButtonsMain)
-        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setSpacing(5)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setContentsMargins(5, 10, 0, 0)
         self.btn_Orcamento = QPushButton(self.frm_ButtonsMain)
         self.btn_Orcamento.setObjectName(u"btn_Orcamento")
         self.btn_Orcamento.setMinimumSize(QSize(0, 80))
         font = QFont()
-        font.setPointSize(12)
+        font.setPointSize(16)
         font.setBold(True)
         self.btn_Orcamento.setFont(font)
         self.btn_Orcamento.setStyleSheet(u"QPushButton{\n"
-"	border: 0px solid;\n"
-"	color: white;\n"
 "\n"
+"color: white;\n"
+"background-color: #6272a4;\n"
+"border-top-left-radius: 10px;\n"
+"border-bottom-left-radius: 10px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgb(85, 170, 255);\n"
-"color:black;\n"
+"background-color: #ff79c6;\n"
+"color:#282a36;\n"
+"\n"
 "}\n"
 "\n"
 "QPushButton:Pressed{\n"
-"background-color:rgb(63, 126, 189);\n"
+"background-color: rgb(255, 74, 179);\n"
+"color:#44475a;\n"
 "}")
 
         self.verticalLayout_2.addWidget(self.btn_Orcamento)
@@ -106,18 +119,22 @@ class Ui_MainWindow(object):
         self.btn_ValorCliente.setMinimumSize(QSize(0, 80))
         self.btn_ValorCliente.setFont(font)
         self.btn_ValorCliente.setStyleSheet(u"QPushButton{\n"
-"	border: 0px solid;\n"
-"	color: white;\n"
 "\n"
+"color: white;\n"
+"background-color: #6272a4;\n"
+"border-top-left-radius: 10px;\n"
+"border-bottom-left-radius: 10px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgb(85, 170, 255);\n"
-"color:black;\n"
+"background-color: #ff79c6;\n"
+"color:#282a36;\n"
+"\n"
 "}\n"
 "\n"
 "QPushButton:Pressed{\n"
-"background-color:rgb(63, 126, 189);\n"
+"background-color: rgb(255, 74, 179);\n"
+"color:#44475a;\n"
 "}")
 
         self.verticalLayout_2.addWidget(self.btn_ValorCliente)
@@ -127,18 +144,22 @@ class Ui_MainWindow(object):
         self.btn_ValorCompleto.setMinimumSize(QSize(0, 80))
         self.btn_ValorCompleto.setFont(font)
         self.btn_ValorCompleto.setStyleSheet(u"QPushButton{\n"
-"	border: 0px solid;\n"
-"	color: white;\n"
 "\n"
+"color: white;\n"
+"background-color: #6272a4;\n"
+"border-top-left-radius: 10px;\n"
+"border-bottom-left-radius: 10px;\n"
 "}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-color: rgb(85, 170, 255);\n"
-"color:black;\n"
+"background-color: #ff79c6;\n"
+"color:#282a36;\n"
+"\n"
 "}\n"
 "\n"
 "QPushButton:Pressed{\n"
-"background-color:rgb(63, 126, 189);\n"
+"background-color: rgb(255, 74, 179);\n"
+"color:#44475a;\n"
 "}")
         self.btn_ValorCompleto.setFlat(False)
 
@@ -156,7 +177,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3 = QVBoxLayout(self.frm_Secundario)
         self.verticalLayout_3.setSpacing(0)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setContentsMargins(5, 5, 5, 5)
         self.btn_Sair = QPushButton(self.frm_Secundario)
         self.btn_Sair.setObjectName(u"btn_Sair")
         sizePolicy1 = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -166,12 +187,14 @@ class Ui_MainWindow(object):
         self.btn_Sair.setSizePolicy(sizePolicy1)
         self.btn_Sair.setMinimumSize(QSize(0, 80))
         font1 = QFont()
-        font1.setPointSize(12)
+        font1.setPointSize(16)
         font1.setBold(True)
         font1.setItalic(True)
         self.btn_Sair.setFont(font1)
         self.btn_Sair.setStyleSheet(u"QPushButton{\n"
+"background-color: #6272a4;\n"
 "	border: 0px solid;\n"
+"	border-radius: 5px;\n"
 "	color: white;\n"
 "\n"
 "}\n"
@@ -195,7 +218,8 @@ class Ui_MainWindow(object):
 
         self.frm_Telas = QFrame(self.frm_MainFrame)
         self.frm_Telas.setObjectName(u"frm_Telas")
-        self.frm_Telas.setMaximumSize(QSize(16777215, 16777215))
+        self.frm_Telas.setMaximumSize(QSize(11111111, 1111111))
+        self.frm_Telas.setStyleSheet(u"background-color:#383a59;")
         self.frm_Telas.setFrameShape(QFrame.NoFrame)
         self.frm_Telas.setFrameShadow(QFrame.Raised)
         self.gridLayout_2 = QGridLayout(self.frm_Telas)
@@ -206,49 +230,32 @@ class Ui_MainWindow(object):
         self.pgs_Operacao.setObjectName(u"pgs_Operacao")
         self.pgs_Operacao.setStyleSheet(u"")
         self.pgs_Operacao.setFrameShape(QFrame.NoFrame)
+        self.pgs_Operacao.setFrameShadow(QFrame.Plain)
+        self.pgs_Operacao.setLineWidth(0)
         self.pg_home = QWidget()
         self.pg_home.setObjectName(u"pg_home")
         self.verticalLayout_4 = QVBoxLayout(self.pg_home)
+        self.verticalLayout_4.setSpacing(0)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.verticalLayout_4.setContentsMargins(-1, 9, -1, -1)
-        self.frame_2 = QFrame(self.pg_home)
-        self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setMinimumSize(QSize(600, 140))
-        self.frame_2.setMaximumSize(QSize(600, 140))
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_6 = QVBoxLayout(self.frame_2)
-        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.label_4 = QLabel(self.frame_2)
-        self.label_4.setObjectName(u"label_4")
-        self.label_4.setMaximumSize(QSize(16777215, 300))
-        font2 = QFont()
-        font2.setPointSize(72)
-        font2.setBold(True)
-        self.label_4.setFont(font2)
-        self.label_4.setContextMenuPolicy(Qt.PreventContextMenu)
-        self.label_4.setWordWrap(False)
-
-        self.verticalLayout_6.addWidget(self.label_4)
-
-
-        self.verticalLayout_4.addWidget(self.frame_2, 0, Qt.AlignHCenter)
-
+        self.verticalLayout_4.setContentsMargins(0, 9, 0, 0)
         self.frame = QFrame(self.pg_home)
         self.frame.setObjectName(u"frame")
         self.frame.setMinimumSize(QSize(0, 600))
         self.frame.setStyleSheet(u"")
-        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShape(QFrame.NoFrame)
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_5 = QVBoxLayout(self.frame)
+        self.verticalLayout_5.setSpacing(0)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.label_5 = QLabel(self.frame)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setStyleSheet(u"background-image: url(:/fundo/imgs/3d.png);\n"
+        self.verticalLayout_5.setContentsMargins(0, -1, 0, 0)
+        self.lbl_LogoHome = QLabel(self.frame)
+        self.lbl_LogoHome.setObjectName(u"lbl_LogoHome")
+        self.lbl_LogoHome.setStyleSheet(u"background-image: url(:/fundo/imgs/3d.png);\n"
 "background-position: center top;\n"
-"background-repeat: no-repeat;")
+"background-repeat: no-repeat;\n"
+"")
 
-        self.verticalLayout_5.addWidget(self.label_5)
+        self.verticalLayout_5.addWidget(self.lbl_LogoHome)
 
 
         self.verticalLayout_4.addWidget(self.frame, 0, Qt.AlignVCenter)
@@ -256,26 +263,67 @@ class Ui_MainWindow(object):
         self.pgs_Operacao.addWidget(self.pg_home)
         self.pg_Orcamento = QWidget()
         self.pg_Orcamento.setObjectName(u"pg_Orcamento")
-        self.label = QLabel(self.pg_Orcamento)
+        self.horizontalLayout_3 = QHBoxLayout(self.pg_Orcamento)
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.frame_2 = QFrame(self.pg_Orcamento)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_6 = QVBoxLayout(self.frame_2)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.label = QLabel(self.frame_2)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(330, 240, 141, 101))
-        sizePolicy2 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        sizePolicy2.setHorizontalStretch(8)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy2)
+        font2 = QFont()
+        font2.setPointSize(48)
+        self.label.setFont(font2)
+
+        self.verticalLayout_6.addWidget(self.label, 0, Qt.AlignHCenter)
+
+
+        self.horizontalLayout_3.addWidget(self.frame_2)
+
         self.pgs_Operacao.addWidget(self.pg_Orcamento)
         self.pg_ValorCliente = QWidget()
         self.pg_ValorCliente.setObjectName(u"pg_ValorCliente")
-        self.label_2 = QLabel(self.pg_ValorCliente)
+        self.verticalLayout_7 = QVBoxLayout(self.pg_ValorCliente)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.frame_3 = QFrame(self.pg_ValorCliente)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setFrameShape(QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_9 = QVBoxLayout(self.frame_3)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.label_2 = QLabel(self.frame_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(280, 270, 331, 141))
+        self.label_2.setFont(font2)
+
+        self.verticalLayout_9.addWidget(self.label_2, 0, Qt.AlignHCenter)
+
+
+        self.verticalLayout_7.addWidget(self.frame_3)
+
         self.pgs_Operacao.addWidget(self.pg_ValorCliente)
         self.pg_ValorCompleto = QWidget()
         self.pg_ValorCompleto.setObjectName(u"pg_ValorCompleto")
-        self.label_3 = QLabel(self.pg_ValorCompleto)
+        self.verticalLayout_8 = QVBoxLayout(self.pg_ValorCompleto)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.frame_4 = QFrame(self.pg_ValorCompleto)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_10 = QVBoxLayout(self.frame_4)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.label_3 = QLabel(self.frame_4)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(180, 260, 481, 131))
+        self.label_3.setFont(font2)
+
+        self.verticalLayout_10.addWidget(self.label_3)
+
+
+        self.verticalLayout_8.addWidget(self.frame_4, 0, Qt.AlignHCenter)
+
         self.pgs_Operacao.addWidget(self.pg_ValorCompleto)
 
         self.gridLayout_2.addWidget(self.pgs_Operacao, 0, 0, 1, 1)
@@ -289,7 +337,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1128, 22))
+        self.menubar.setGeometry(QRect(0, 0, 1000, 22))
         self.mn_CadastrarItens = QMenu(self.menubar)
         self.mn_CadastrarItens.setObjectName(u"mn_CadastrarItens")
         self.mn_IncluirModelos = QMenu(self.menubar)
@@ -334,11 +382,10 @@ class Ui_MainWindow(object):
         self.btn_ValorCliente.setText(QCoreApplication.translate("MainWindow", u"Valor Cliente", None))
         self.btn_ValorCompleto.setText(QCoreApplication.translate("MainWindow", u"Valor Completo", None))
         self.btn_Sair.setText(QCoreApplication.translate("MainWindow", u"Sair", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Bem vindo!", None))
-        self.label_5.setText("")
-        self.label.setText(QCoreApplication.translate("MainWindow", u"ORCAMENTO", None))
+        self.lbl_LogoHome.setText("")
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Pagina Or\u00e7amento", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Valor Cliente", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"VALOR COMPLETO", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Valor Completo", None))
         self.mn_CadastrarItens.setTitle(QCoreApplication.translate("MainWindow", u"Cadastrar Insumos", None))
         self.mn_IncluirModelos.setTitle(QCoreApplication.translate("MainWindow", u"Incluir Modelos", None))
         self.menuConfigurar.setTitle(QCoreApplication.translate("MainWindow", u"Configurar", None))
