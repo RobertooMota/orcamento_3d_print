@@ -19,7 +19,8 @@ class MainWindow(QMainWindow):
 
 		# Botões menu lateral
 		self.interface.btn_Orcamento.clicked.connect(lambda: UIFuncoes.Orcamento(self))
-		self.interface.btn_ValorCliente.clicked.connect(lambda: UIFuncoes.ValorCliente(self))
+		self.interface.btn_Modelos3D.clicked.connect(lambda: UIFuncoes.Modelos3D(self))
+		self.interface.btn_ValorCompleto.clicked.connect(lambda: UIFuncoes.ValorCompleto(self))
 		self.interface.btn_ValorCompleto.clicked.connect(lambda: UIFuncoes.ValorCompleto(self))
 
 		# Sair

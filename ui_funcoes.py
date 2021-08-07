@@ -17,6 +17,9 @@ class UIFuncoes(MainWindow):
 		self.interface.pgs_Operacao.setCurrentWidget(self.interface.pg_ValorCompleto)
 		UIFuncoes.SelectPage(self, 'pgValorCompleto')
 
+	def funcao(self):
+		pass
+
 	def SelectPage(self, pg):
 		if pg == 'pgOrcamento':
 			self.interface.btn_Orcamento.setStyleSheet(u"QPushButton{\n"

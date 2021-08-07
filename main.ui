@@ -194,7 +194,7 @@ color:#44475a;
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="btn_ValorCliente">
+              <widget class="QPushButton" name="btn_Modelos3D">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -228,12 +228,12 @@ color:#44475a;
 }</string>
                </property>
                <property name="text">
-                <string>Valor Cliente</string>
+                <string>Modelos 3D</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="btn_ValorCompleto">
+              <widget class="QPushButton" name="btn_Configuracoes">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -267,10 +267,50 @@ color:#44475a;
 }</string>
                </property>
                <property name="text">
-                <string>Valor Completo</string>
+                <string>Configurações</string>
                </property>
                <property name="flat">
                 <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_Sobre">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>16</pointsize>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+
+color: white;
+background-color: #6272a4;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+QPushButton:hover{
+background-color: #ff79c6;
+color:#282a36;
+
+}
+
+QPushButton:Pressed{
+background-color: rgb(255, 74, 179);
+color:#44475a;
+}</string>
+               </property>
+               <property name="text">
+                <string>Sobre</string>
                </property>
               </widget>
              </item>
@@ -405,7 +445,7 @@ background-color: #EE3312;
              <number>0</number>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="pg_home">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -519,7 +559,7 @@ background-repeat: no-repeat;
                     </font>
                    </property>
                    <property name="text">
-                    <string>Valor Cliente</string>
+                    <string>Modelos 3D</string>
                    </property>
                   </widget>
                  </item>
@@ -562,7 +602,7 @@ background-repeat: no-repeat;
                     </font>
                    </property>
                    <property name="text">
-                    <string>Valor Completo</string>
+                    <string>Configurações</string>
                    </property>
                   </widget>
                  </item>
@@ -580,46 +620,6 @@ background-repeat: no-repeat;
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1000</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="mn_CadastrarItens">
-    <property name="title">
-     <string>Cadastrar Insumos</string>
-    </property>
-    <addaction name="opc_Filamento"/>
-   </widget>
-   <widget class="QMenu" name="mn_IncluirModelos">
-    <property name="title">
-     <string>Incluir Modelos</string>
-    </property>
-    <addaction name="actionKarikos"/>
-   </widget>
-   <widget class="QMenu" name="menuConfigurar">
-    <property name="title">
-     <string>Configurar</string>
-    </property>
-    <addaction name="actionValores"/>
-    <addaction name="actionLucro"/>
-   </widget>
-   <widget class="QMenu" name="menuSobre">
-    <property name="title">
-     <string>Sobre</string>
-    </property>
-    <addaction name="actionQuem_somos_n_s"/>
-    <addaction name="actionNos_Ajude"/>
-   </widget>
-   <addaction name="mn_CadastrarItens"/>
-   <addaction name="mn_IncluirModelos"/>
-   <addaction name="menuConfigurar"/>
-   <addaction name="menuSobre"/>
   </widget>
   <action name="opc_Filamento">
    <property name="text">

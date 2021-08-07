@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainmXnaJA.ui'
+## Form generated from reading UI file 'mainScttKF.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.2
 ##
@@ -114,11 +114,11 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.btn_Orcamento)
 
-        self.btn_ValorCliente = QPushButton(self.frm_ButtonsMain)
-        self.btn_ValorCliente.setObjectName(u"btn_ValorCliente")
-        self.btn_ValorCliente.setMinimumSize(QSize(0, 80))
-        self.btn_ValorCliente.setFont(font)
-        self.btn_ValorCliente.setStyleSheet(u"QPushButton{\n"
+        self.btn_Modelos3D = QPushButton(self.frm_ButtonsMain)
+        self.btn_Modelos3D.setObjectName(u"btn_Modelos3D")
+        self.btn_Modelos3D.setMinimumSize(QSize(0, 80))
+        self.btn_Modelos3D.setFont(font)
+        self.btn_Modelos3D.setStyleSheet(u"QPushButton{\n"
 "\n"
 "color: white;\n"
 "background-color: #6272a4;\n"
@@ -137,13 +137,13 @@ class Ui_MainWindow(object):
 "color:#44475a;\n"
 "}")
 
-        self.verticalLayout_2.addWidget(self.btn_ValorCliente)
+        self.verticalLayout_2.addWidget(self.btn_Modelos3D)
 
-        self.btn_ValorCompleto = QPushButton(self.frm_ButtonsMain)
-        self.btn_ValorCompleto.setObjectName(u"btn_ValorCompleto")
-        self.btn_ValorCompleto.setMinimumSize(QSize(0, 80))
-        self.btn_ValorCompleto.setFont(font)
-        self.btn_ValorCompleto.setStyleSheet(u"QPushButton{\n"
+        self.btn_Configuracoes = QPushButton(self.frm_ButtonsMain)
+        self.btn_Configuracoes.setObjectName(u"btn_Configuracoes")
+        self.btn_Configuracoes.setMinimumSize(QSize(0, 80))
+        self.btn_Configuracoes.setFont(font)
+        self.btn_Configuracoes.setStyleSheet(u"QPushButton{\n"
 "\n"
 "color: white;\n"
 "background-color: #6272a4;\n"
@@ -161,9 +161,38 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 74, 179);\n"
 "color:#44475a;\n"
 "}")
-        self.btn_ValorCompleto.setFlat(False)
+        self.btn_Configuracoes.setFlat(False)
 
-        self.verticalLayout_2.addWidget(self.btn_ValorCompleto)
+        self.verticalLayout_2.addWidget(self.btn_Configuracoes)
+
+        self.btn_Sobre = QPushButton(self.frm_ButtonsMain)
+        self.btn_Sobre.setObjectName(u"btn_Sobre")
+        self.btn_Sobre.setMinimumSize(QSize(0, 80))
+        font1 = QFont()
+        font1.setPointSize(16)
+        font1.setBold(True)
+        font1.setItalic(True)
+        self.btn_Sobre.setFont(font1)
+        self.btn_Sobre.setStyleSheet(u"QPushButton{\n"
+"\n"
+"color: white;\n"
+"background-color: #6272a4;\n"
+"border-top-left-radius: 10px;\n"
+"border-bottom-left-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-color: #ff79c6;\n"
+"color:#282a36;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:Pressed{\n"
+"background-color: rgb(255, 74, 179);\n"
+"color:#44475a;\n"
+"}")
+
+        self.verticalLayout_2.addWidget(self.btn_Sobre)
 
 
         self.verticalLayout.addWidget(self.frm_ButtonsMain, 0, Qt.AlignTop)
@@ -186,10 +215,6 @@ class Ui_MainWindow(object):
         sizePolicy1.setHeightForWidth(self.btn_Sair.sizePolicy().hasHeightForWidth())
         self.btn_Sair.setSizePolicy(sizePolicy1)
         self.btn_Sair.setMinimumSize(QSize(0, 80))
-        font1 = QFont()
-        font1.setPointSize(16)
-        font1.setBold(True)
-        font1.setItalic(True)
         self.btn_Sair.setFont(font1)
         self.btn_Sair.setStyleSheet(u"QPushButton{\n"
 "background-color: #6272a4;\n"
@@ -335,33 +360,10 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.frm_MainFrame)
 
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QMenuBar(MainWindow)
-        self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1000, 22))
-        self.mn_CadastrarItens = QMenu(self.menubar)
-        self.mn_CadastrarItens.setObjectName(u"mn_CadastrarItens")
-        self.mn_IncluirModelos = QMenu(self.menubar)
-        self.mn_IncluirModelos.setObjectName(u"mn_IncluirModelos")
-        self.menuConfigurar = QMenu(self.menubar)
-        self.menuConfigurar.setObjectName(u"menuConfigurar")
-        self.menuSobre = QMenu(self.menubar)
-        self.menuSobre.setObjectName(u"menuSobre")
-        MainWindow.setMenuBar(self.menubar)
-
-        self.menubar.addAction(self.mn_CadastrarItens.menuAction())
-        self.menubar.addAction(self.mn_IncluirModelos.menuAction())
-        self.menubar.addAction(self.menuConfigurar.menuAction())
-        self.menubar.addAction(self.menuSobre.menuAction())
-        self.mn_CadastrarItens.addAction(self.opc_Filamento)
-        self.mn_IncluirModelos.addAction(self.actionKarikos)
-        self.menuConfigurar.addAction(self.actionValores)
-        self.menuConfigurar.addAction(self.actionLucro)
-        self.menuSobre.addAction(self.actionQuem_somos_n_s)
-        self.menuSobre.addAction(self.actionNos_Ajude)
 
         self.retranslateUi(MainWindow)
 
-        self.pgs_Operacao.setCurrentIndex(0)
+        self.pgs_Operacao.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -379,16 +381,13 @@ class Ui_MainWindow(object):
         self.actionQuem_somos_n_s.setText(QCoreApplication.translate("MainWindow", u"Desenvolvimento", None))
         self.actionNos_Ajude.setText(QCoreApplication.translate("MainWindow", u"Nos Ajude !", None))
         self.btn_Orcamento.setText(QCoreApplication.translate("MainWindow", u"Or\u00e7amento", None))
-        self.btn_ValorCliente.setText(QCoreApplication.translate("MainWindow", u"Valor Cliente", None))
-        self.btn_ValorCompleto.setText(QCoreApplication.translate("MainWindow", u"Valor Completo", None))
+        self.btn_Modelos3D.setText(QCoreApplication.translate("MainWindow", u"Modelos 3D", None))
+        self.btn_Configuracoes.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00f5es", None))
+        self.btn_Sobre.setText(QCoreApplication.translate("MainWindow", u"Sobre", None))
         self.btn_Sair.setText(QCoreApplication.translate("MainWindow", u"Sair", None))
         self.lbl_LogoHome.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"Pagina Or\u00e7amento", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Valor Cliente", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Valor Completo", None))
-        self.mn_CadastrarItens.setTitle(QCoreApplication.translate("MainWindow", u"Cadastrar Insumos", None))
-        self.mn_IncluirModelos.setTitle(QCoreApplication.translate("MainWindow", u"Incluir Modelos", None))
-        self.menuConfigurar.setTitle(QCoreApplication.translate("MainWindow", u"Configurar", None))
-        self.menuSobre.setTitle(QCoreApplication.translate("MainWindow", u"Sobre", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Modelos 3D", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00f5es", None))
     # retranslateUi
 
