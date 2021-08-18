@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainkkEMpD.ui'
+## Form generated from reading UI file 'mainsNSzhy.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.2
 ##
@@ -253,7 +253,10 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.pgs_Operacao = QStackedWidget(self.frm_Telas)
         self.pgs_Operacao.setObjectName(u"pgs_Operacao")
-        self.pgs_Operacao.setStyleSheet(u"")
+        self.pgs_Operacao.setStyleSheet(u"QLineEdit{\n"
+"color:white;\n"
+"font-weight: bold;\n"
+"}")
         self.pgs_Operacao.setFrameShape(QFrame.NoFrame)
         self.pgs_Operacao.setFrameShadow(QFrame.Plain)
         self.pgs_Operacao.setLineWidth(0)
@@ -467,16 +470,9 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(3, QFormLayout.LabelRole, self.label_4)
 
-        self.comboBox = QComboBox(self.frame_5)
-        self.comboBox.addItem("")
-        self.comboBox.addItem("")
-        self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setStyleSheet(u"color:white;")
-
-        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.comboBox)
-
         self.lineEdit_5 = QLineEdit(self.frame_5)
         self.lineEdit_5.setObjectName(u"lineEdit_5")
+        self.lineEdit_5.setReadOnly(True)
 
         self.formLayout.setWidget(4, QFormLayout.FieldRole, self.lineEdit_5)
 
@@ -492,6 +488,12 @@ class Ui_MainWindow(object):
 "")
 
         self.formLayout.setWidget(4, QFormLayout.LabelRole, self.label_5)
+
+        self.lineEdit_6 = QLineEdit(self.frame_5)
+        self.lineEdit_6.setObjectName(u"lineEdit_6")
+        self.lineEdit_6.setReadOnly(True)
+
+        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.lineEdit_6)
 
 
         self.verticalLayout_17.addLayout(self.formLayout)
@@ -519,13 +521,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_18.setContentsMargins(2, 2, 2, 2)
         self.formLayout_2 = QFormLayout()
         self.formLayout_2.setObjectName(u"formLayout_2")
-        self.formLayout_2.setLabelAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.formLayout_2.setLabelAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
         self.formLayout_2.setFormAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignTop)
         self.formLayout_2.setHorizontalSpacing(6)
         self.formLayout_2.setVerticalSpacing(15)
         self.formLayout_2.setContentsMargins(-1, 9, -1, -1)
         self.label_8 = QLabel(self.frame_7)
         self.label_8.setObjectName(u"label_8")
+        self.label_8.setFont(font3)
         self.label_8.setStyleSheet(u"background-color:#bd93f9;\n"
 "border: 0px solid;\n"
 "border-radius:6px;\n"
@@ -540,6 +543,24 @@ class Ui_MainWindow(object):
         self.lineEdit_4.setObjectName(u"lineEdit_4")
 
         self.formLayout_2.setWidget(0, QFormLayout.FieldRole, self.lineEdit_4)
+
+        self.label_9 = QLabel(self.frame_7)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setFont(font3)
+        self.label_9.setStyleSheet(u"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"")
+
+        self.formLayout_2.setWidget(1, QFormLayout.LabelRole, self.label_9)
+
+        self.lineEdit_7 = QLineEdit(self.frame_7)
+        self.lineEdit_7.setObjectName(u"lineEdit_7")
+
+        self.formLayout_2.setWidget(1, QFormLayout.FieldRole, self.lineEdit_7)
 
 
         self.verticalLayout_18.addLayout(self.formLayout_2)
@@ -588,12 +609,139 @@ class Ui_MainWindow(object):
 
         self.frame_4 = QFrame(self.campo_2_ValoresProducao)
         self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"QLabel{\n"
+"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"}")
         self.frame_4.setFrameShape(QFrame.Box)
         self.frame_4.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_13 = QVBoxLayout(self.frame_4)
-        self.verticalLayout_13.setSpacing(0)
-        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_8 = QHBoxLayout(self.frame_4)
+        self.horizontalLayout_8.setSpacing(0)
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.horizontalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.frame_13 = QFrame(self.frame_4)
+        self.frame_13.setObjectName(u"frame_13")
+        self.frame_13.setMaximumSize(QSize(1111111, 16777215))
+        self.frame_13.setFrameShape(QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_9 = QHBoxLayout(self.frame_13)
+        self.horizontalLayout_9.setSpacing(2)
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.horizontalLayout_9.setContentsMargins(2, 2, 2, 2)
+        self.formLayout_3 = QFormLayout()
+        self.formLayout_3.setObjectName(u"formLayout_3")
+        self.formLayout_3.setLabelAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.formLayout_3.setVerticalSpacing(15)
+        self.label_10 = QLabel(self.frame_13)
+        self.label_10.setObjectName(u"label_10")
+        self.label_10.setFont(font3)
+        self.label_10.setStyleSheet(u"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"")
+
+        self.formLayout_3.setWidget(0, QFormLayout.LabelRole, self.label_10)
+
+        self.label_11 = QLabel(self.frame_13)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setFont(font3)
+        self.label_11.setStyleSheet(u"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"")
+
+        self.formLayout_3.setWidget(3, QFormLayout.LabelRole, self.label_11)
+
+        self.label_12 = QLabel(self.frame_13)
+        self.label_12.setObjectName(u"label_12")
+        self.label_12.setFont(font3)
+        self.label_12.setStyleSheet(u"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"")
+
+        self.formLayout_3.setWidget(1, QFormLayout.LabelRole, self.label_12)
+
+        self.label_13 = QLabel(self.frame_13)
+        self.label_13.setObjectName(u"label_13")
+        self.label_13.setFont(font3)
+        self.label_13.setStyleSheet(u"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"")
+
+        self.formLayout_3.setWidget(2, QFormLayout.LabelRole, self.label_13)
+
+        self.lineEdit_8 = QLineEdit(self.frame_13)
+        self.lineEdit_8.setObjectName(u"lineEdit_8")
+
+        self.formLayout_3.setWidget(0, QFormLayout.FieldRole, self.lineEdit_8)
+
+        self.lineEdit_9 = QLineEdit(self.frame_13)
+        self.lineEdit_9.setObjectName(u"lineEdit_9")
+
+        self.formLayout_3.setWidget(1, QFormLayout.FieldRole, self.lineEdit_9)
+
+        self.lineEdit_10 = QLineEdit(self.frame_13)
+        self.lineEdit_10.setObjectName(u"lineEdit_10")
+
+        self.formLayout_3.setWidget(2, QFormLayout.FieldRole, self.lineEdit_10)
+
+        self.lineEdit_11 = QLineEdit(self.frame_13)
+        self.lineEdit_11.setObjectName(u"lineEdit_11")
+
+        self.formLayout_3.setWidget(3, QFormLayout.FieldRole, self.lineEdit_11)
+
+
+        self.horizontalLayout_9.addLayout(self.formLayout_3)
+
+
+        self.horizontalLayout_8.addWidget(self.frame_13)
+
+        self.frame_14 = QFrame(self.frame_4)
+        self.frame_14.setObjectName(u"frame_14")
+        self.frame_14.setFrameShape(QFrame.StyledPanel)
+        self.frame_14.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_10 = QHBoxLayout(self.frame_14)
+        self.horizontalLayout_10.setSpacing(2)
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalLayout_10.setContentsMargins(-1, 2, 2, 2)
+        self.formLayout_4 = QFormLayout()
+        self.formLayout_4.setObjectName(u"formLayout_4")
+        self.formLayout_4.setVerticalSpacing(15)
+        self.label_14 = QLabel(self.frame_14)
+        self.label_14.setObjectName(u"label_14")
+        self.label_14.setFont(font3)
+
+        self.formLayout_4.setWidget(0, QFormLayout.LabelRole, self.label_14)
+
+        self.lineEdit_12 = QLineEdit(self.frame_14)
+        self.lineEdit_12.setObjectName(u"lineEdit_12")
+
+        self.formLayout_4.setWidget(0, QFormLayout.FieldRole, self.lineEdit_12)
+
+
+        self.horizontalLayout_10.addLayout(self.formLayout_4)
+
+
+        self.horizontalLayout_8.addWidget(self.frame_14)
+
 
         self.verticalLayout_10.addWidget(self.frame_4)
 
@@ -632,8 +780,125 @@ class Ui_MainWindow(object):
 
         self.frame_6 = QFrame(self.campo_3_RetornoLucro)
         self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setStyleSheet(u"QLabel{\n"
+"background-color:#bd93f9;\n"
+"border: 0px solid;\n"
+"border-radius:6px;\n"
+"padding-right:10px;\n"
+"padding-left:10px;\n"
+"color:white;\n"
+"font-weight: bold;\n"
+"\n"
+"}")
         self.frame_6.setFrameShape(QFrame.Box)
         self.frame_6.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_11 = QHBoxLayout(self.frame_6)
+        self.horizontalLayout_11.setSpacing(2)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.horizontalLayout_11.setContentsMargins(2, 2, 2, 2)
+        self.frame_15 = QFrame(self.frame_6)
+        self.frame_15.setObjectName(u"frame_15")
+        self.frame_15.setMaximumSize(QSize(1111111, 16777215))
+        self.frame_15.setFrameShape(QFrame.StyledPanel)
+        self.frame_15.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_12 = QHBoxLayout(self.frame_15)
+        self.horizontalLayout_12.setSpacing(0)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.horizontalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_6 = QFormLayout()
+        self.formLayout_6.setObjectName(u"formLayout_6")
+        self.formLayout_6.setLabelAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+        self.formLayout_6.setVerticalSpacing(15)
+        self.formLayout_6.setContentsMargins(-1, -1, 9, -1)
+        self.label_15 = QLabel(self.frame_15)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font3)
+
+        self.formLayout_6.setWidget(0, QFormLayout.LabelRole, self.label_15)
+
+        self.label_16 = QLabel(self.frame_15)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setFont(font3)
+
+        self.formLayout_6.setWidget(1, QFormLayout.LabelRole, self.label_16)
+
+        self.label_17 = QLabel(self.frame_15)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setFont(font3)
+
+        self.formLayout_6.setWidget(2, QFormLayout.LabelRole, self.label_17)
+
+        self.label_18 = QLabel(self.frame_15)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setFont(font3)
+
+        self.formLayout_6.setWidget(3, QFormLayout.LabelRole, self.label_18)
+
+        self.label_19 = QLabel(self.frame_15)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setFont(font3)
+
+        self.formLayout_6.setWidget(4, QFormLayout.LabelRole, self.label_19)
+
+        self.lineEdit_13 = QLineEdit(self.frame_15)
+        self.lineEdit_13.setObjectName(u"lineEdit_13")
+
+        self.formLayout_6.setWidget(0, QFormLayout.FieldRole, self.lineEdit_13)
+
+        self.lineEdit_14 = QLineEdit(self.frame_15)
+        self.lineEdit_14.setObjectName(u"lineEdit_14")
+
+        self.formLayout_6.setWidget(1, QFormLayout.FieldRole, self.lineEdit_14)
+
+        self.lineEdit_15 = QLineEdit(self.frame_15)
+        self.lineEdit_15.setObjectName(u"lineEdit_15")
+
+        self.formLayout_6.setWidget(2, QFormLayout.FieldRole, self.lineEdit_15)
+
+        self.lineEdit_16 = QLineEdit(self.frame_15)
+        self.lineEdit_16.setObjectName(u"lineEdit_16")
+
+        self.formLayout_6.setWidget(3, QFormLayout.FieldRole, self.lineEdit_16)
+
+        self.lineEdit_17 = QLineEdit(self.frame_15)
+        self.lineEdit_17.setObjectName(u"lineEdit_17")
+
+        self.formLayout_6.setWidget(4, QFormLayout.FieldRole, self.lineEdit_17)
+
+
+        self.horizontalLayout_12.addLayout(self.formLayout_6)
+
+
+        self.horizontalLayout_11.addWidget(self.frame_15)
+
+        self.frame_16 = QFrame(self.frame_6)
+        self.frame_16.setObjectName(u"frame_16")
+        self.frame_16.setFrameShape(QFrame.StyledPanel)
+        self.frame_16.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_13 = QHBoxLayout(self.frame_16)
+        self.horizontalLayout_13.setSpacing(0)
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_7 = QFormLayout()
+        self.formLayout_7.setObjectName(u"formLayout_7")
+        self.formLayout_7.setContentsMargins(9, -1, -1, -1)
+        self.label_20 = QLabel(self.frame_16)
+        self.label_20.setObjectName(u"label_20")
+
+        self.formLayout_7.setWidget(0, QFormLayout.LabelRole, self.label_20)
+
+        self.lineEdit_18 = QLineEdit(self.frame_16)
+        self.lineEdit_18.setObjectName(u"lineEdit_18")
+        self.lineEdit_18.setMaximumSize(QSize(70, 16777215))
+
+        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.lineEdit_18)
+
+
+        self.horizontalLayout_13.addLayout(self.formLayout_7)
+
+
+        self.horizontalLayout_11.addWidget(self.frame_16)
+
 
         self.verticalLayout_15.addWidget(self.frame_6)
 
@@ -831,7 +1096,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.pgs_Operacao.setCurrentIndex(3)
+        self.pgs_Operacao.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -858,17 +1123,38 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Modelos 3D", None))
         self.titulo_Filamento.setText(QCoreApplication.translate("MainWindow", u"Filamento", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Marca", None))
+        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Marca do filamento", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Tipo", None))
+        self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"ABS / PLA / PETG / etc", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Di\u00e2metro", None))
+        self.lineEdit_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Di\u00e2metro em mil\u00edmetros (1.75 / 3.0 / etc)", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Desnsidade", None))
-        self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"1,04", None))
-        self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"1,24", None))
-
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u00c1rea", None))
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o", None))
+        self.lineEdit_6.setPlaceholderText("")
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o (kg)", None))
+        self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o pago por 1 Kg", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Frete", None))
+        self.lineEdit_7.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Valor pago no frete do filamento", None))
+#if QT_CONFIG(tooltip)
+        self.titulo_ValoresProducao.setToolTip("")
+#endif // QT_CONFIG(tooltip)
         self.titulo_ValoresProducao.setText(QCoreApplication.translate("MainWindow", u"Valores de produ\u00e7\u00e3o", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o por KWh", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"M\u00e9dia de falhas", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Consumo da maquina (W)", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Deprecia\u00e7\u00e3o por hora", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Modelagem 3D", None))
+#if QT_CONFIG(tooltip)
+        self.titulo_RetornoLucro.setToolTip(QCoreApplication.translate("MainWindow", u"Retorno do investimento na maquina (em quanto tempo quer pagar a maquina?)", None))
+#endif // QT_CONFIG(tooltip)
         self.titulo_RetornoLucro.setText(QCoreApplication.translate("MainWindow", u"Retorno de investimento e Lucro", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Salvar", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Tempo desejado (m\u00eas)", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Valor da maquina", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"Horas por dia", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Dias por m\u00eas", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Valor adicional por hora", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"LUCRO", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Cadastrar", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Limpar", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Atualizar", None))
         self.btn_Configuracao_Cancelar.setText(QCoreApplication.translate("MainWindow", u"Cancelar", None))
