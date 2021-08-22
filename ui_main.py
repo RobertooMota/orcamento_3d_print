@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainsNSzhy.ui'
+## Form generated from reading UI file 'mainQscSoB.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.2
 ##
@@ -414,12 +414,12 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.label_6)
 
-        self.lineEdit = QLineEdit(self.frame_5)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setStyleSheet(u"color:white;\n"
+        self.txt_MarcaFilamento = QLineEdit(self.frame_5)
+        self.txt_MarcaFilamento.setObjectName(u"txt_MarcaFilamento")
+        self.txt_MarcaFilamento.setStyleSheet(u"color:white;\n"
 "")
 
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.lineEdit)
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.txt_MarcaFilamento)
 
         self.label_7 = QLabel(self.frame_5)
         self.label_7.setObjectName(u"label_7")
@@ -434,10 +434,10 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_7)
 
-        self.lineEdit_2 = QLineEdit(self.frame_5)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.txt_TipoFilamento = QLineEdit(self.frame_5)
+        self.txt_TipoFilamento.setObjectName(u"txt_TipoFilamento")
 
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.lineEdit_2)
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.txt_TipoFilamento)
 
         self.label_3 = QLabel(self.frame_5)
         self.label_3.setObjectName(u"label_3")
@@ -452,10 +452,10 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(2, QFormLayout.LabelRole, self.label_3)
 
-        self.lineEdit_3 = QLineEdit(self.frame_5)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.txt_DiametroFilamento = QLineEdit(self.frame_5)
+        self.txt_DiametroFilamento.setObjectName(u"txt_DiametroFilamento")
 
-        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.lineEdit_3)
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.txt_DiametroFilamento)
 
         self.label_4 = QLabel(self.frame_5)
         self.label_4.setObjectName(u"label_4")
@@ -470,12 +470,6 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(3, QFormLayout.LabelRole, self.label_4)
 
-        self.lineEdit_5 = QLineEdit(self.frame_5)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
-        self.lineEdit_5.setReadOnly(True)
-
-        self.formLayout.setWidget(4, QFormLayout.FieldRole, self.lineEdit_5)
-
         self.label_5 = QLabel(self.frame_5)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setFont(font3)
@@ -489,11 +483,23 @@ class Ui_MainWindow(object):
 
         self.formLayout.setWidget(4, QFormLayout.LabelRole, self.label_5)
 
-        self.lineEdit_6 = QLineEdit(self.frame_5)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
-        self.lineEdit_6.setReadOnly(True)
+        self.txt_AreaFilamento = QLineEdit(self.frame_5)
+        self.txt_AreaFilamento.setObjectName(u"txt_AreaFilamento")
+        self.txt_AreaFilamento.setReadOnly(True)
 
-        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.lineEdit_6)
+        self.formLayout.setWidget(4, QFormLayout.FieldRole, self.txt_AreaFilamento)
+
+        self.cb_densidade = QComboBox(self.frame_5)
+        self.cb_densidade.addItem("")
+        self.cb_densidade.addItem("")
+        self.cb_densidade.setObjectName(u"cb_densidade")
+        font4 = QFont()
+        font4.setBold(True)
+        self.cb_densidade.setFont(font4)
+        self.cb_densidade.setStyleSheet(u"color:white;\n"
+"")
+
+        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.cb_densidade)
 
 
         self.verticalLayout_17.addLayout(self.formLayout)
@@ -539,31 +545,96 @@ class Ui_MainWindow(object):
 
         self.formLayout_2.setWidget(0, QFormLayout.LabelRole, self.label_8)
 
-        self.lineEdit_4 = QLineEdit(self.frame_7)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
+        self.txt_ValorKG = QLineEdit(self.frame_7)
+        self.txt_ValorKG.setObjectName(u"txt_ValorKG")
 
-        self.formLayout_2.setWidget(0, QFormLayout.FieldRole, self.lineEdit_4)
-
-        self.label_9 = QLabel(self.frame_7)
-        self.label_9.setObjectName(u"label_9")
-        self.label_9.setFont(font3)
-        self.label_9.setStyleSheet(u"background-color:#bd93f9;\n"
-"border: 0px solid;\n"
-"border-radius:6px;\n"
-"padding-right:10px;\n"
-"padding-left:10px;\n"
-"color:white;\n"
-"")
-
-        self.formLayout_2.setWidget(1, QFormLayout.LabelRole, self.label_9)
-
-        self.lineEdit_7 = QLineEdit(self.frame_7)
-        self.lineEdit_7.setObjectName(u"lineEdit_7")
-
-        self.formLayout_2.setWidget(1, QFormLayout.FieldRole, self.lineEdit_7)
+        self.formLayout_2.setWidget(0, QFormLayout.FieldRole, self.txt_ValorKG)
 
 
         self.verticalLayout_18.addLayout(self.formLayout_2)
+
+        self.frame_17 = QFrame(self.frame_7)
+        self.frame_17.setObjectName(u"frame_17")
+        sizePolicy1.setHeightForWidth(self.frame_17.sizePolicy().hasHeightForWidth())
+        self.frame_17.setSizePolicy(sizePolicy1)
+        self.frame_17.setMinimumSize(QSize(300, 0))
+        self.frame_17.setFrameShape(QFrame.StyledPanel)
+        self.frame_17.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_14 = QHBoxLayout(self.frame_17)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.btn_ProcurarFilamento = QPushButton(self.frame_17)
+        self.btn_ProcurarFilamento.setObjectName(u"btn_ProcurarFilamento")
+        self.btn_ProcurarFilamento.setMinimumSize(QSize(0, 60))
+        self.btn_ProcurarFilamento.setMaximumSize(QSize(300, 16777215))
+        font5 = QFont()
+        font5.setPointSize(14)
+        font5.setBold(True)
+        font5.setItalic(True)
+        self.btn_ProcurarFilamento.setFont(font5)
+        self.btn_ProcurarFilamento.setStyleSheet(u"QPushButton{\n"
+"border:3px solid #8be9fd;\n"
+"border-radius: 30px;\n"
+"border-style: outset;\n"
+"\n"
+"background-color:#6272a4;\n"
+"color:#8be9fd;\n"
+"}\n"
+"QPushButton:hover{\n"
+"border:3px solid #8be9fd;\n"
+"border-radius: 30px;\n"
+"border-style: outset;\n"
+"\n"
+"background-color:#8be9fd;;\n"
+"color:#6272a4;\n"
+"}\n"
+"QPushButton:Pressed{\n"
+"border:3px solid #8be9fd;\n"
+"border-radius: 30px;\n"
+"border-style: inset;\n"
+"\n"
+"background-color:#8be9fd;;\n"
+"color:#6272a4;\n"
+"}\n"
+"")
+
+        self.horizontalLayout_14.addWidget(self.btn_ProcurarFilamento)
+
+        self.btn_AtualizarFilamento = QPushButton(self.frame_17)
+        self.btn_AtualizarFilamento.setObjectName(u"btn_AtualizarFilamento")
+        self.btn_AtualizarFilamento.setMinimumSize(QSize(0, 60))
+        self.btn_AtualizarFilamento.setFont(font5)
+        self.btn_AtualizarFilamento.setStyleSheet(u"QPushButton{\n"
+"border:3px solid #50fa7b ;\n"
+"border-radius: 15px;\n"
+"border-style:outset;\n"
+"\n"
+"color:#50fa7b;\n"
+"background-color:#6272a4;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"border:3px solid #50fa7b ;\n"
+"border-radius: 15px;\n"
+"border-style:outset;\n"
+"\n"
+"color:#6272a4;\n"
+"background-color:#50fa7b;\n"
+"}\n"
+"\n"
+"QPushButton:Pressed{\n"
+"border:3px solid #50fa7b ;\n"
+"border-radius: 15px;\n"
+"\n"
+"border-style:inset;\n"
+"\n"
+"color:#6272a4;\n"
+"background-color:#50fa6b;\n"
+"}")
+
+        self.horizontalLayout_14.addWidget(self.btn_AtualizarFilamento)
+
+
+        self.verticalLayout_18.addWidget(self.frame_17, 0, Qt.AlignVCenter)
 
 
         self.verticalLayout_19.addWidget(self.frame_7)
@@ -688,25 +759,25 @@ class Ui_MainWindow(object):
 
         self.formLayout_3.setWidget(2, QFormLayout.LabelRole, self.label_13)
 
-        self.lineEdit_8 = QLineEdit(self.frame_13)
-        self.lineEdit_8.setObjectName(u"lineEdit_8")
+        self.txt_KWh = QLineEdit(self.frame_13)
+        self.txt_KWh.setObjectName(u"txt_KWh")
 
-        self.formLayout_3.setWidget(0, QFormLayout.FieldRole, self.lineEdit_8)
+        self.formLayout_3.setWidget(0, QFormLayout.FieldRole, self.txt_KWh)
 
-        self.lineEdit_9 = QLineEdit(self.frame_13)
-        self.lineEdit_9.setObjectName(u"lineEdit_9")
+        self.txt_PotenciaImpressora = QLineEdit(self.frame_13)
+        self.txt_PotenciaImpressora.setObjectName(u"txt_PotenciaImpressora")
 
-        self.formLayout_3.setWidget(1, QFormLayout.FieldRole, self.lineEdit_9)
+        self.formLayout_3.setWidget(1, QFormLayout.FieldRole, self.txt_PotenciaImpressora)
 
-        self.lineEdit_10 = QLineEdit(self.frame_13)
-        self.lineEdit_10.setObjectName(u"lineEdit_10")
+        self.txt_Depreciacao = QLineEdit(self.frame_13)
+        self.txt_Depreciacao.setObjectName(u"txt_Depreciacao")
 
-        self.formLayout_3.setWidget(2, QFormLayout.FieldRole, self.lineEdit_10)
+        self.formLayout_3.setWidget(2, QFormLayout.FieldRole, self.txt_Depreciacao)
 
-        self.lineEdit_11 = QLineEdit(self.frame_13)
-        self.lineEdit_11.setObjectName(u"lineEdit_11")
+        self.txt_MediaFalhas = QLineEdit(self.frame_13)
+        self.txt_MediaFalhas.setObjectName(u"txt_MediaFalhas")
 
-        self.formLayout_3.setWidget(3, QFormLayout.FieldRole, self.lineEdit_11)
+        self.formLayout_3.setWidget(3, QFormLayout.FieldRole, self.txt_MediaFalhas)
 
 
         self.horizontalLayout_9.addLayout(self.formLayout_3)
@@ -731,10 +802,10 @@ class Ui_MainWindow(object):
 
         self.formLayout_4.setWidget(0, QFormLayout.LabelRole, self.label_14)
 
-        self.lineEdit_12 = QLineEdit(self.frame_14)
-        self.lineEdit_12.setObjectName(u"lineEdit_12")
+        self.txt_Modelagem = QLineEdit(self.frame_14)
+        self.txt_Modelagem.setObjectName(u"txt_Modelagem")
 
-        self.formLayout_4.setWidget(0, QFormLayout.FieldRole, self.lineEdit_12)
+        self.formLayout_4.setWidget(0, QFormLayout.FieldRole, self.txt_Modelagem)
 
 
         self.horizontalLayout_10.addLayout(self.formLayout_4)
@@ -840,30 +911,30 @@ class Ui_MainWindow(object):
 
         self.formLayout_6.setWidget(4, QFormLayout.LabelRole, self.label_19)
 
-        self.lineEdit_13 = QLineEdit(self.frame_15)
-        self.lineEdit_13.setObjectName(u"lineEdit_13")
+        self.txt_TempoRetorno = QLineEdit(self.frame_15)
+        self.txt_TempoRetorno.setObjectName(u"txt_TempoRetorno")
 
-        self.formLayout_6.setWidget(0, QFormLayout.FieldRole, self.lineEdit_13)
+        self.formLayout_6.setWidget(0, QFormLayout.FieldRole, self.txt_TempoRetorno)
 
-        self.lineEdit_14 = QLineEdit(self.frame_15)
-        self.lineEdit_14.setObjectName(u"lineEdit_14")
+        self.txt_ValorImpressora = QLineEdit(self.frame_15)
+        self.txt_ValorImpressora.setObjectName(u"txt_ValorImpressora")
 
-        self.formLayout_6.setWidget(1, QFormLayout.FieldRole, self.lineEdit_14)
+        self.formLayout_6.setWidget(1, QFormLayout.FieldRole, self.txt_ValorImpressora)
 
-        self.lineEdit_15 = QLineEdit(self.frame_15)
-        self.lineEdit_15.setObjectName(u"lineEdit_15")
+        self.txt_HorasDia = QLineEdit(self.frame_15)
+        self.txt_HorasDia.setObjectName(u"txt_HorasDia")
 
-        self.formLayout_6.setWidget(2, QFormLayout.FieldRole, self.lineEdit_15)
+        self.formLayout_6.setWidget(2, QFormLayout.FieldRole, self.txt_HorasDia)
 
-        self.lineEdit_16 = QLineEdit(self.frame_15)
-        self.lineEdit_16.setObjectName(u"lineEdit_16")
+        self.txt_DiasMes = QLineEdit(self.frame_15)
+        self.txt_DiasMes.setObjectName(u"txt_DiasMes")
 
-        self.formLayout_6.setWidget(3, QFormLayout.FieldRole, self.lineEdit_16)
+        self.formLayout_6.setWidget(3, QFormLayout.FieldRole, self.txt_DiasMes)
 
-        self.lineEdit_17 = QLineEdit(self.frame_15)
-        self.lineEdit_17.setObjectName(u"lineEdit_17")
+        self.txt_ValorAdicionalHora = QLineEdit(self.frame_15)
+        self.txt_ValorAdicionalHora.setObjectName(u"txt_ValorAdicionalHora")
 
-        self.formLayout_6.setWidget(4, QFormLayout.FieldRole, self.lineEdit_17)
+        self.formLayout_6.setWidget(4, QFormLayout.FieldRole, self.txt_ValorAdicionalHora)
 
 
         self.horizontalLayout_12.addLayout(self.formLayout_6)
@@ -887,11 +958,11 @@ class Ui_MainWindow(object):
 
         self.formLayout_7.setWidget(0, QFormLayout.LabelRole, self.label_20)
 
-        self.lineEdit_18 = QLineEdit(self.frame_16)
-        self.lineEdit_18.setObjectName(u"lineEdit_18")
-        self.lineEdit_18.setMaximumSize(QSize(70, 16777215))
+        self.txt_Lucro = QLineEdit(self.frame_16)
+        self.txt_Lucro.setObjectName(u"txt_Lucro")
+        self.txt_Lucro.setMaximumSize(QSize(70, 16777215))
 
-        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.lineEdit_18)
+        self.formLayout_7.setWidget(0, QFormLayout.FieldRole, self.txt_Lucro)
 
 
         self.horizontalLayout_13.addLayout(self.formLayout_7)
@@ -929,18 +1000,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7 = QHBoxLayout(self.frame_12)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.pushButton = QPushButton(self.frame_12)
-        self.pushButton.setObjectName(u"pushButton")
+        self.btn_Cadastrar = QPushButton(self.frame_12)
+        self.btn_Cadastrar.setObjectName(u"btn_Cadastrar")
         sizePolicy3 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Expanding)
         sizePolicy3.setHorizontalStretch(0)
         sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy3)
-        font4 = QFont()
-        font4.setPointSize(14)
-        font4.setBold(True)
-        self.pushButton.setFont(font4)
-        self.pushButton.setStyleSheet(u"QPushButton{\n"
+        sizePolicy3.setHeightForWidth(self.btn_Cadastrar.sizePolicy().hasHeightForWidth())
+        self.btn_Cadastrar.setSizePolicy(sizePolicy3)
+        font6 = QFont()
+        font6.setPointSize(14)
+        font6.setBold(True)
+        self.btn_Cadastrar.setFont(font6)
+        self.btn_Cadastrar.setStyleSheet(u"QPushButton{\n"
 "border:3px solid #50fa7b ;\n"
 "border-radius: 15px;\n"
 "border-style:outset;\n"
@@ -968,14 +1039,14 @@ class Ui_MainWindow(object):
 "background-color:#50fa6b;\n"
 "}")
 
-        self.horizontalLayout_7.addWidget(self.pushButton)
+        self.horizontalLayout_7.addWidget(self.btn_Cadastrar)
 
-        self.pushButton_2 = QPushButton(self.frame_12)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        sizePolicy3.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy3)
-        self.pushButton_2.setFont(font4)
-        self.pushButton_2.setStyleSheet(u"QPushButton{\n"
+        self.btn_Limpar = QPushButton(self.frame_12)
+        self.btn_Limpar.setObjectName(u"btn_Limpar")
+        sizePolicy3.setHeightForWidth(self.btn_Limpar.sizePolicy().hasHeightForWidth())
+        self.btn_Limpar.setSizePolicy(sizePolicy3)
+        self.btn_Limpar.setFont(font6)
+        self.btn_Limpar.setStyleSheet(u"QPushButton{\n"
 "border:3px solid #f1fa8c ;\n"
 "border-radius: 15px;\n"
 "border-style:outset;\n"
@@ -998,14 +1069,14 @@ class Ui_MainWindow(object):
 "color:#6272a4;\n"
 "}")
 
-        self.horizontalLayout_7.addWidget(self.pushButton_2)
+        self.horizontalLayout_7.addWidget(self.btn_Limpar)
 
-        self.pushButton_3 = QPushButton(self.frame_12)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        sizePolicy3.setHeightForWidth(self.pushButton_3.sizePolicy().hasHeightForWidth())
-        self.pushButton_3.setSizePolicy(sizePolicy3)
-        self.pushButton_3.setFont(font4)
-        self.pushButton_3.setStyleSheet(u"QPushButton{\n"
+        self.btn_Atualizar = QPushButton(self.frame_12)
+        self.btn_Atualizar.setObjectName(u"btn_Atualizar")
+        sizePolicy3.setHeightForWidth(self.btn_Atualizar.sizePolicy().hasHeightForWidth())
+        self.btn_Atualizar.setSizePolicy(sizePolicy3)
+        self.btn_Atualizar.setFont(font6)
+        self.btn_Atualizar.setStyleSheet(u"QPushButton{\n"
 "border:3px solid #8be9fd;\n"
 "border-radius: 15px;\n"
 "border-style: outset;\n"
@@ -1031,7 +1102,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
 
-        self.horizontalLayout_7.addWidget(self.pushButton_3)
+        self.horizontalLayout_7.addWidget(self.btn_Atualizar)
 
 
         self.horizontalLayout_6.addWidget(self.frame_12)
@@ -1049,10 +1120,6 @@ class Ui_MainWindow(object):
         self.btn_Configuracao_Cancelar.setObjectName(u"btn_Configuracao_Cancelar")
         sizePolicy3.setHeightForWidth(self.btn_Configuracao_Cancelar.sizePolicy().hasHeightForWidth())
         self.btn_Configuracao_Cancelar.setSizePolicy(sizePolicy3)
-        font5 = QFont()
-        font5.setPointSize(14)
-        font5.setBold(True)
-        font5.setItalic(True)
         self.btn_Configuracao_Cancelar.setFont(font5)
         self.btn_Configuracao_Cancelar.setStyleSheet(u"QPushButton{\n"
 "border:2px solid #ff5555;\n"
@@ -1123,18 +1190,20 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Modelos 3D", None))
         self.titulo_Filamento.setText(QCoreApplication.translate("MainWindow", u"Filamento", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Marca", None))
-        self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Marca do filamento", None))
+        self.txt_MarcaFilamento.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Marca do filamento", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Tipo", None))
-        self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"ABS / PLA / PETG / etc", None))
+        self.txt_TipoFilamento.setPlaceholderText(QCoreApplication.translate("MainWindow", u"ABS / PLA / PETG / etc", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Di\u00e2metro", None))
-        self.lineEdit_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Di\u00e2metro em mil\u00edmetros (1.75 / 3.0 / etc)", None))
+        self.txt_DiametroFilamento.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Di\u00e2metro em mil\u00edmetros (1.75 / 3.0 / etc)", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Desnsidade", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"\u00c1rea", None))
-        self.lineEdit_6.setPlaceholderText("")
+        self.cb_densidade.setItemText(0, QCoreApplication.translate("MainWindow", u"1.24", None))
+        self.cb_densidade.setItemText(1, QCoreApplication.translate("MainWindow", u"1.04", None))
+
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o (kg)", None))
-        self.lineEdit_4.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o pago por 1 Kg", None))
-        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Frete", None))
-        self.lineEdit_7.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Valor pago no frete do filamento", None))
+        self.txt_ValorKG.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Pre\u00e7o pago por 1 Kg", None))
+        self.btn_ProcurarFilamento.setText(QCoreApplication.translate("MainWindow", u"Procurar Filamento", None))
+        self.btn_AtualizarFilamento.setText(QCoreApplication.translate("MainWindow", u"Atualizar Filamento", None))
 #if QT_CONFIG(tooltip)
         self.titulo_ValoresProducao.setToolTip("")
 #endif // QT_CONFIG(tooltip)
@@ -1154,9 +1223,9 @@ class Ui_MainWindow(object):
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"Dias por m\u00eas", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"Valor adicional por hora", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"LUCRO", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Cadastrar", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Limpar", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Atualizar", None))
+        self.btn_Cadastrar.setText(QCoreApplication.translate("MainWindow", u"Cadastrar", None))
+        self.btn_Limpar.setText(QCoreApplication.translate("MainWindow", u"Limpar", None))
+        self.btn_Atualizar.setText(QCoreApplication.translate("MainWindow", u"Atualizar", None))
         self.btn_Configuracao_Cancelar.setText(QCoreApplication.translate("MainWindow", u"Cancelar", None))
     # retranslateUi
 

@@ -448,7 +448,7 @@ font-weight: bold;
              <number>0</number>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="pg_home">
              <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -785,7 +785,7 @@ color:white;
                           </widget>
                          </item>
                          <item row="0" column="1">
-                          <widget class="QLineEdit" name="lineEdit">
+                          <widget class="QLineEdit" name="txt_MarcaFilamento">
                            <property name="styleSheet">
                             <string notr="true">color:white;
 </string>
@@ -818,7 +818,7 @@ color:white;
                           </widget>
                          </item>
                          <item row="1" column="1">
-                          <widget class="QLineEdit" name="lineEdit_2">
+                          <widget class="QLineEdit" name="txt_TipoFilamento">
                            <property name="placeholderText">
                             <string>ABS / PLA / PETG / etc</string>
                            </property>
@@ -847,7 +847,7 @@ color:white;
                           </widget>
                          </item>
                          <item row="2" column="1">
-                          <widget class="QLineEdit" name="lineEdit_3">
+                          <widget class="QLineEdit" name="txt_DiametroFilamento">
                            <property name="placeholderText">
                             <string>Diâmetro em milímetros (1.75 / 3.0 / etc)</string>
                            </property>
@@ -875,13 +875,6 @@ color:white;
                            </property>
                           </widget>
                          </item>
-                         <item row="4" column="1">
-                          <widget class="QLineEdit" name="lineEdit_5">
-                           <property name="readOnly">
-                            <bool>true</bool>
-                           </property>
-                          </widget>
-                         </item>
                          <item row="4" column="0">
                           <widget class="QLabel" name="label_5">
                            <property name="font">
@@ -904,14 +897,34 @@ color:white;
                            </property>
                           </widget>
                          </item>
-                         <item row="3" column="1">
-                          <widget class="QLineEdit" name="lineEdit_6">
+                         <item row="4" column="1">
+                          <widget class="QLineEdit" name="txt_AreaFilamento">
                            <property name="readOnly">
                             <bool>true</bool>
                            </property>
-                           <property name="placeholderText">
-                            <string/>
+                          </widget>
+                         </item>
+                         <item row="3" column="1">
+                          <widget class="QComboBox" name="cb_densidade">
+                           <property name="font">
+                            <font>
+                             <bold>true</bold>
+                            </font>
                            </property>
+                           <property name="styleSheet">
+                            <string notr="true">color:white;
+</string>
+                           </property>
+                           <item>
+                            <property name="text">
+                             <string>1.24</string>
+                            </property>
+                           </item>
+                           <item>
+                            <property name="text">
+                             <string>1.04</string>
+                            </property>
+                           </item>
                           </widget>
                          </item>
                         </layout>
@@ -1019,42 +1032,139 @@ color:white;
                              </widget>
                             </item>
                             <item row="0" column="1">
-                             <widget class="QLineEdit" name="lineEdit_4">
+                             <widget class="QLineEdit" name="txt_ValorKG">
                               <property name="placeholderText">
                                <string>Preço pago por 1 Kg</string>
                               </property>
                              </widget>
                             </item>
-                            <item row="1" column="0">
-                             <widget class="QLabel" name="label_9">
-                              <property name="font">
-                               <font>
-                                <pointsize>12</pointsize>
-                                <bold>true</bold>
-                               </font>
-                              </property>
-                              <property name="styleSheet">
-                               <string notr="true">background-color:#bd93f9;
-border: 0px solid;
-border-radius:6px;
-padding-right:10px;
-padding-left:10px;
-color:white;
-</string>
-                              </property>
-                              <property name="text">
-                               <string>Frete</string>
-                              </property>
-                             </widget>
-                            </item>
-                            <item row="1" column="1">
-                             <widget class="QLineEdit" name="lineEdit_7">
-                              <property name="placeholderText">
-                               <string>Valor pago no frete do filamento</string>
-                              </property>
-                             </widget>
-                            </item>
                            </layout>
+                          </item>
+                          <item alignment="Qt::AlignVCenter">
+                           <widget class="QFrame" name="frame_17">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>300</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="frameShape">
+                             <enum>QFrame::StyledPanel</enum>
+                            </property>
+                            <property name="frameShadow">
+                             <enum>QFrame::Raised</enum>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_14">
+                             <item>
+                              <widget class="QPushButton" name="btn_ProcurarFilamento">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>0</width>
+                                 <height>60</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>300</width>
+                                 <height>16777215</height>
+                                </size>
+                               </property>
+                               <property name="font">
+                                <font>
+                                 <pointsize>14</pointsize>
+                                 <italic>true</italic>
+                                 <bold>true</bold>
+                                </font>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">QPushButton{
+border:3px solid #8be9fd;
+border-radius: 30px;
+border-style: outset;
+
+background-color:#6272a4;
+color:#8be9fd;
+}
+QPushButton:hover{
+border:3px solid #8be9fd;
+border-radius: 30px;
+border-style: outset;
+
+background-color:#8be9fd;;
+color:#6272a4;
+}
+QPushButton:Pressed{
+border:3px solid #8be9fd;
+border-radius: 30px;
+border-style: inset;
+
+background-color:#8be9fd;;
+color:#6272a4;
+}
+</string>
+                               </property>
+                               <property name="text">
+                                <string>Procurar Filamento</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="btn_AtualizarFilamento">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>0</width>
+                                 <height>60</height>
+                                </size>
+                               </property>
+                               <property name="font">
+                                <font>
+                                 <pointsize>14</pointsize>
+                                 <italic>true</italic>
+                                 <bold>true</bold>
+                                </font>
+                               </property>
+                               <property name="styleSheet">
+                                <string notr="true">QPushButton{
+border:3px solid #50fa7b ;
+border-radius: 15px;
+border-style:outset;
+
+color:#50fa7b;
+background-color:#6272a4;
+}
+
+QPushButton:hover{
+border:3px solid #50fa7b ;
+border-radius: 15px;
+border-style:outset;
+
+color:#6272a4;
+background-color:#50fa7b;
+}
+
+QPushButton:Pressed{
+border:3px solid #50fa7b ;
+border-radius: 15px;
+
+border-style:inset;
+
+color:#6272a4;
+background-color:#50fa6b;
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Atualizar Filamento</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
                           </item>
                          </layout>
                         </widget>
@@ -1314,16 +1424,16 @@ color:white;
                           </widget>
                          </item>
                          <item row="0" column="1">
-                          <widget class="QLineEdit" name="lineEdit_8"/>
+                          <widget class="QLineEdit" name="txt_KWh"/>
                          </item>
                          <item row="1" column="1">
-                          <widget class="QLineEdit" name="lineEdit_9"/>
+                          <widget class="QLineEdit" name="txt_PotenciaImpressora"/>
                          </item>
                          <item row="2" column="1">
-                          <widget class="QLineEdit" name="lineEdit_10"/>
+                          <widget class="QLineEdit" name="txt_Depreciacao"/>
                          </item>
                          <item row="3" column="1">
-                          <widget class="QLineEdit" name="lineEdit_11"/>
+                          <widget class="QLineEdit" name="txt_MediaFalhas"/>
                          </item>
                         </layout>
                        </item>
@@ -1370,7 +1480,7 @@ color:white;
                           </widget>
                          </item>
                          <item row="0" column="1">
-                          <widget class="QLineEdit" name="lineEdit_12"/>
+                          <widget class="QLineEdit" name="txt_Modelagem"/>
                          </item>
                         </layout>
                        </item>
@@ -1611,19 +1721,19 @@ font-weight: bold;
                           </widget>
                          </item>
                          <item row="0" column="1">
-                          <widget class="QLineEdit" name="lineEdit_13"/>
+                          <widget class="QLineEdit" name="txt_TempoRetorno"/>
                          </item>
                          <item row="1" column="1">
-                          <widget class="QLineEdit" name="lineEdit_14"/>
+                          <widget class="QLineEdit" name="txt_ValorImpressora"/>
                          </item>
                          <item row="2" column="1">
-                          <widget class="QLineEdit" name="lineEdit_15"/>
+                          <widget class="QLineEdit" name="txt_HorasDia"/>
                          </item>
                          <item row="3" column="1">
-                          <widget class="QLineEdit" name="lineEdit_16"/>
+                          <widget class="QLineEdit" name="txt_DiasMes"/>
                          </item>
                          <item row="4" column="1">
-                          <widget class="QLineEdit" name="lineEdit_17"/>
+                          <widget class="QLineEdit" name="txt_ValorAdicionalHora"/>
                          </item>
                         </layout>
                        </item>
@@ -1667,7 +1777,7 @@ font-weight: bold;
                           </widget>
                          </item>
                          <item row="0" column="1">
-                          <widget class="QLineEdit" name="lineEdit_18">
+                          <widget class="QLineEdit" name="txt_Lucro">
                            <property name="maximumSize">
                             <size>
                              <width>70</width>
@@ -1766,7 +1876,7 @@ font-weight: bold;
                         <number>0</number>
                        </property>
                        <item>
-                        <widget class="QPushButton" name="pushButton">
+                        <widget class="QPushButton" name="btn_Cadastrar">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
                            <horstretch>0</horstretch>
@@ -1814,7 +1924,7 @@ background-color:#50fa6b;
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="pushButton_2">
+                        <widget class="QPushButton" name="btn_Limpar">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
                            <horstretch>0</horstretch>
@@ -1857,7 +1967,7 @@ color:#6272a4;
                         </widget>
                        </item>
                        <item>
-                        <widget class="QPushButton" name="pushButton_3">
+                        <widget class="QPushButton" name="btn_Atualizar">
                          <property name="sizePolicy">
                           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
                            <horstretch>0</horstretch>
