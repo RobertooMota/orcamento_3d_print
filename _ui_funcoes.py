@@ -1,8 +1,8 @@
-from main import *
+from _main import *
 from math import pi, pow
-from DBFunctions import *
+
 import sys
-from DBFunctions import DataBase
+from _DBFunctions import DataBase
 
 
 class UIFuncoes(MainWindow):
@@ -316,5 +316,5 @@ class OperationsDB(MainWindow):
 		dados.Cadastrar('retorno', tempoRetorno, valorImpressora, horasDias, diasMes, valorAdicionalHora, lucro)
 
 
-def AtualizarFilamento(self):
-	pass
+	def AtualizarFilamento(self):
+		pass

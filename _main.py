@@ -3,7 +3,7 @@ from PySide6.QtGui import *  # type: ignore
 from PySide6.QtWidgets import *  # type: ignore
 import sys
 from ui_main import Ui_MainWindow
-from ui_funcoes import *
+from _ui_funcoes import *
 from time import sleep
 
 version = '1.0.0'
